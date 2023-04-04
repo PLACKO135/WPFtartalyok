@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Osztalyaim;
+using Osztalyok;
 
 namespace WPFTartalyok
 {
@@ -77,7 +77,7 @@ namespace WPFTartalyok
             sw.Close();
             foreach (Tartaly aktElem in tartalyok)
             {
-                String csvsor = $"{aktElem.Nev};{aktElem.A};{aktElem.B};{aktElem.C};{aktElem.AktLiter}";
+                String csvsor = $"{aktElem.Nev};{aktElem.aEl};{aktElem.bEl};{aktElem.cEl};{aktElem.AktLiter}";
                 sw.WriteLine(csvsor);
             }
         }
